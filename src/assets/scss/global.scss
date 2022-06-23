@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+body {
+
+  background: linear-gradient(#FEFEFE, #F7F4FA);
+  height: 100vh;
+  width: 100vw;
+}
+
 .container {
-  width: 800px;
+  width: calc(100% - 200px);
 }
