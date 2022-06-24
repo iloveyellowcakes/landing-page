@@ -1,11 +1,39 @@
 <main>
-  <div class="container">
+  <section class="container">
 
-    <h2 class="title">
-      Your <span class="title-en">next job</span> <br>
-      is here.
-    </h2>
+    <div class="box"></div>
+    <div class="person"></div>
+    <div class="content">
+      <h2 class="title">
+        Your <span class="title-en">next job</span> <br>
+        is here.
+      </h2>
+      <form class="search">
+        <input type="text" class="search__input" placeholder="Job tittle or company...">
+        <button type="submit" class="search__btn" >
+          <span class="search__icon">
+            <img src="../../assets/icon/Search.svg" alt="">
+          </span>
+        </button>
+      </form>
+    </div>
 
-  </div>
-  <div class="box"></div>
+    <div class="news">
+      <p class="news__title">News: </p>
+      <a [routerLink]="['']"  class="news__content">
+        In last week, we helps 1.586 of job seekers and
+        employers find the right fit.
+      </a>
+    </div>
+
+  </section>
+
+
 </main>
+
+<section class="card-section container">
+ <h2 class="title-main"> Recommended Jobs: </h2>
+
+ <app-card></app-card>
+
+</section>

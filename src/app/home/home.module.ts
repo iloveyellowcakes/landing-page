@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { ComponentsModule } from './../components/components.module';
 import { NgModule } from '@angular/core';
@@ -11,7 +12,8 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    RouterModule
   ],
   exports: [
     HomeComponent

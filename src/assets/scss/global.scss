@@ -7,10 +7,16 @@
 body {
 
   background: linear-gradient(#FEFEFE, #F7F4FA);
-  height: 100vh;
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
+  height: 100%;
 }
 
 .container {
   width: calc(100% - 200px);
+}
+
+.title-main {
+  font-weight: 700;
+  font-size: 37px;
 }
