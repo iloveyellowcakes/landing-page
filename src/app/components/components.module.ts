@@ -1,3 +1,4 @@
+import { CardAdressComponent } from './card-adress/card-adress.component';
 
 import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
@@ -13,7 +14,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     CardComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardAdressComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   ],
   exports: [
     CardComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardAdressComponent
   ]
 })
 export class ComponentsModule { }
