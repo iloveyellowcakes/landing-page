@@ -1,7 +1,105 @@
+.teste {
+  display: flex;
+}
+
 .card{
-  height: 403px;
-  width: 270px;
   background: white;
   border-radius: 10px;
   box-shadow: 4px 4px 20px rgba(167, 105, 207, 0.1);
+
+  margin: 40px 0;
+  min-height: 403px;
+  width: 270px;
+
+  &__header {
+    height: 175px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &__img {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+
+
+  &__divider {
+    background: white;
+    text-align: center;
+    margin: 20px auto;
+    height: 1px;
+    width: 230px;
+  }
+
+  &__content{
+    padding: 0 25px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 27px;
+  }
+
+  &__local {
+    margin-top: 6px;
+    display: flex;
+    position: relative;
+  }
+
+  &__icon-local {
+    background: url('../../../assets/icon/local.svg') no-repeat;
+    height: 20px;
+    width: 15px;
+    position: absolute;
+  }
+
+  &__local-name {
+    padding-left: 22px;
+  }
+
+  &__footer {
+
+    padding: 0 25px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__price {
+      background: linear-gradient(90deg, rgba(204, 90, 165, 0.5) 0%, rgba(167, 105, 207, 0.5) 100%);
+      background-clip: text;
+      color: transparent;
+
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+
 }
+
+.next_icon {
+  border: solid 1px #F4A56A;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.next__icon-img {
+  background: url('../../../assets/icon/arrow-orange.svg') no-repeat;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  height: 15px;
+  width: 10px;
+}
+
+
+
+
+

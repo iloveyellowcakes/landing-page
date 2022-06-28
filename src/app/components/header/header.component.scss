@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100px;
 
   &__logo {
@@ -43,13 +43,15 @@
     padding-left: 50px;
     color: white;
     font-size: 14px;
+    text-decoration: none;
   }
 
   &__btn {
-    padding: 12px 20px;
     background: transparent;
     border: 1px solid white;
+    border-radius: 5px;
     color: white;
-
+    text-decoration: none;
+    padding: 12px 20px;
   }
 }

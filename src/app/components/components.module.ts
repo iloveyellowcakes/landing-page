@@ -1,7 +1,12 @@
+
 import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 
 
@@ -11,7 +16,10 @@ import { CardComponent } from './card/card.component';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CarouselModule,
+    BrowserAnimationsModule
+
   ],
   exports: [
     CardComponent,
