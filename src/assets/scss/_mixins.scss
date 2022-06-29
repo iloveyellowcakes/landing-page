@@ -1,0 +1,29 @@
+@mixin btn($size, $visibility) {
+
+  background: linear-gradient(126.65deg, #FAB574 9.4%, #F09C6A 82.44%);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px rgba(244, 165, 106, 0.5);
+  cursor: pointer;
+
+  position: absolute;
+  right: 13px;
+
+
+  height: $size;
+  width: $size;
+
+  display: $visibility;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+@mixin icon-local($url) {
+  background: $url no-repeat;
+  height: 20px;
+  width: 15px;
+  position: absolute;
+
+}

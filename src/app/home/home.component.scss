@@ -104,6 +104,33 @@ main {
 
 .card-section {
   margin-top: 166px;
+  height: 610px;
+  position: relative;
 }
 
+.testeee {
+  display: flex;
+  justify-content: end;
+}
 
+.testee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 300px;
+
+}
+.content__description{
+  text-align: right;
+}
+
+.content__link {
+  margin-top: 30px;
+  color: #F4A56A;
+}

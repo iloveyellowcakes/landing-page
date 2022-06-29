@@ -1,7 +1,4 @@
-.teste {
-  width: 500px;
-  margin: 0 auto;
-}
+
 
 .card{
   background: white;
@@ -28,7 +25,7 @@
 
 
   &__divider {
-    background: white;
+    background: #cccccc;
     text-align: center;
     margin: 20px auto;
     height: 1px;
@@ -45,22 +42,6 @@
     margin-bottom: 27px;
   }
 
-  &__local {
-    margin-top: 6px;
-    display: flex;
-    position: relative;
-  }
-
-  &__icon-local {
-    background: url('../../../assets/icon/local.svg') no-repeat;
-    height: 20px;
-    width: 15px;
-    position: absolute;
-  }
-
-  &__local-name {
-    padding-left: 22px;
-  }
 
   &__footer {
 

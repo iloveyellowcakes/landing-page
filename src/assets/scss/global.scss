@@ -1,3 +1,7 @@
+@import 'vars';
+@import 'mixins';
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +12,6 @@ body {
 
   background: linear-gradient(#FEFEFE, #F7F4FA);
   font-family: 'Roboto', sans-serif;
-  // width: 100vw;
   height: 100%;
 }
 
@@ -20,6 +23,70 @@ body {
   font-weight: 700;
   font-size: 37px;
 }
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 570px;
+
+  &__input {
+    border: none;
+    border-radius: 34px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    padding-left: 30px;
+
+    height: 67px;
+    width: 570px;
+  }
+
+  &__btn {
+    @include btn(50px, flex);
+  }
+
+  &__btn-small {
+    @include btn(40px, none)
+  }
+
+}
+
+.details {
+  opacity: 50%;
+
+  &__title {
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+
+.local {
+  margin-top: 6px;
+  display: flex;
+  position: relative;
+
+  &__icon {
+    @include icon-local(url('../icon/local.svg'))
+  }
+
+  &__name {
+    padding-left: 22px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+
+.box-footer {
+  background: url('../imgs/box-footer.svg') no-repeat;
+  width: 710px;
+  height: 626px;
+
+  position: absolute;
+  z-index: -1;
+}
+
+
 
 // Caroulsel Cards
 
@@ -33,12 +100,10 @@ body {
     box-shadow: 15px 15px 50px rgba(157, 96, 218, 0.4);
     color: white;
 
-    &__icon-local {
-      background: url('../icon/local-white.svg') no-repeat;
-      height: 20px;
-      width: 15px;
-      position: absolute;
+    margin-bottom: 90px ;
 
+    &__divider {
+      background: white;
     }
 
     &__footer {
@@ -58,6 +123,19 @@ body {
       font-size: 36px;
       font-weight: 700;
     }
+
+  }
+
+  .details {
+    opacity: 100%;
+  }
+
+  .local__icon {
+    @include icon-local(url('../icon/local.svg'))
+  }
+
+  .local__icon-white {
+    @include icon-local(url('../icon/local-white.svg'))
   }
 
 
@@ -65,18 +143,48 @@ body {
     background: linear-gradient(134.61deg, #FAB674 18.05%, #F09B69 86.11%);
     box-shadow: 4px 4px 10px #8549AE;
     border-radius: 50%;
+    cursor: pointer;
+
     width: 54px;
     height: 54px;
-    cursor: pointer;
   }
 
   .next__icon-img {
     background: url('../icon/arrow.svg') no-repeat;
+
     position: absolute;
     top: 17px;
     left: 21px;
+
     height: 30px;
     width: 18px;
   }
 
+  .card-address {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+
+    height: 78px;
+    width: 329px;
+
+    display: flex;
+    align-items: center;
+
+    &__header{
+      width: 91px;
+    }
+
+  }
+
+  .search__btn-small {
+    @include btn(40px, flex)
+  }
+
+  .search__icon {
+    width: 15px;
+  }
+
 }
+

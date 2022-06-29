@@ -1,12 +1,25 @@
 .address {
   width: 800px;
-  height: 100px;
+  padding-left: 40px;
   margin: 40px auto;
 }
 
-.teste {
-  background: aqua;
-  width: 300px;
-  height: 70px;
-  margin-right: 10px;
+.card-address {
+  background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+  margin: 14px 0;
+
+  height: 78px;
+  width: 265px;
+
+  display: flex;
+  align-items: center;
+
+  &__header{
+    width: 86px;
+  }
+
+
 }
