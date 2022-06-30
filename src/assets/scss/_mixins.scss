@@ -3,11 +3,11 @@
   background: linear-gradient(126.65deg, #FAB574 9.4%, #F09C6A 82.44%);
   border: none;
   border-radius: 50%;
-  box-shadow: 6px 6px 10px rgba(244, 165, 106, 0.5);
+  box-shadow: .6rem .6rem 1rem rgba(244, 165, 106, 0.5);
   cursor: pointer;
 
   position: absolute;
-  right: 13px;
+  right: 1.3rem;
 
 
   height: $size;
@@ -22,8 +22,8 @@
 
 @mixin icon-local($url) {
   background: $url no-repeat;
-  height: 20px;
-  width: 15px;
+  height: 2.0rem;
+  width: 1.5rem;
   position: absolute;
 
 }

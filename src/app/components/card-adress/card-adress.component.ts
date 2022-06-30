@@ -18,14 +18,18 @@ export class CardAdressComponent implements OnInit {
       0: {
         items: 1,
       },
+      400: {
+        items: 2
+      },
       500: {
         items: 2
       },
-
-
+      800: {
+        items: 2
+      }
 
     }
-  };
+  }
 
   ngOnInit() {
   }

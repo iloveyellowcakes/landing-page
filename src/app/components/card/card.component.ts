@@ -20,19 +20,25 @@ export class CardComponent implements OnInit {
     margin: 10,
     responsive: {
       200: {
-        items: 1
+        items: 2
       },
       400: {
         items: 2
       },
-      600: {
+      500: {
         items: 2
       },
       900: {
         items: 3
       },
-      1000: {
+      1200: {
         items: 4
+      },
+      1400: {
+        items: 5
+      },
+      1800: {
+        items: 6
       },
 
 

@@ -1,24 +1,38 @@
 .address {
-  width: 800px;
-  padding-left: 40px;
-  margin: 40px auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  // padding-left: 4rem;
+  // margin: 4rem auto;
 }
+
+.address__content {
+  width: 800px;
+
+  // @media (max-width: 900px) {
+  //   width: 100%;
+  // }
+
+
+}
+
+
 
 .card-address {
   background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
-  -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
-  border-radius: 10px;
-  margin: 14px 0;
+  filter: drop-shadow(1px 1px 1rem rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(1px 1px 1rem rgba(0, 0, 0, 0.1));
+  border-radius: 1rem;
+  margin: 1.4rem 0;
 
-  height: 78px;
-  width: 265px;
+  height: 7.8rem;
+  width: 26.5rem;
 
   display: flex;
   align-items: center;
 
   &__header{
-    width: 86px;
+    width: 8.6em;
   }
 
 

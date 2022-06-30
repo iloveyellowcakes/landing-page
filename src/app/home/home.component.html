@@ -1,22 +1,17 @@
-<main>
-  <section class="container">
-
-    <div class="box"></div>
-    <div class="person"></div>
-    <div class="content">
-      <h2 class="title">
-        Your <span class="title-en">next job</span> <br>
-        is here.
-      </h2>
-      <form class="search">
-        <input type="text" class="search__input" placeholder="Job tittle or company...">
-        <button type="submit" class="search__btn" >
-          <span class="search__icon">
-            <img src="../../assets/icon/Search.svg" alt="">
-          </span>
-        </button>
-      </form>
-    </div>
+<main >
+  <section class="content container">
+    <h2 class="title">
+      Your <span class="title-en">next job</span> <br>
+      is here.
+    </h2>
+    <form class="search">
+      <input type="text" class="search__input" placeholder="Job tittle or company...">
+      <button type="submit" class="search__btn" >
+        <span class="search__icon">
+          <img src="../../assets/icon/Search.svg" alt="">
+        </span>
+      </button>
+    </form>
 
     <div class="news">
       <p class="news__title">News: </p>
@@ -27,25 +22,50 @@
     </div>
 
   </section>
+  <div class="person"></div>
 
 
 </main>
 
-<section class="card-section ">
- <h2 class="title-main"> Recommended Jobs: </h2>
 
+
+<section class="card-section">
+ <h2 class="title-main container"> Recommended Jobs: </h2>
  <app-card></app-card>
-
 </section>
 <section class="card-section ">
 
-  <div class="box-footer"></div>
-  <div class="testeee">
-
-    <div class="testee">
+  <div class="footer">
+    <div class="center-teste">
       <h2 class="title-main"> Find Job’s Near You: </h2>
-      <app-card-adress></app-card-adress>
+      <!-- <app-card-adress></app-card-adress> -->
 
+      <div class="content__footer">
+        <p class="content__description">
+          You can use this feature to make it easier
+          <br>
+          for you to find a job near you.
+        </p>
+
+        <a href="" class="content__link">
+          Learn more
+        </a>
+       </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- <div class="box-footer"></div> -->
+    <!-- <div class="testeee">
+
+      <div class="testee">
+        <h2 class="title-main"> Find Job’s Near You: </h2>
+
+        <app-card-adress></app-card-adress>
       <div class="content__footer">
        <p class="content__description">
          You can use this feature to make it easier for you to find a job near you.
@@ -56,7 +76,7 @@
        </a>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 </section>

@@ -2,12 +2,12 @@
 
 .card{
   background: white;
-  border-radius: 10px;
-  box-shadow: 4px 4px 20px rgba(167, 105, 207, 0.1);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 2.0rem rgba(167, 105, 207, 0.1);
 
-  margin: 40px 0;
-  min-height: 403px;
-  width: 270px;
+  margin: 4rem 0;
+  min-height: 40.3rem;
+  width: 27.0rem;
 
   &__header {
     height: 175px;
@@ -17,8 +17,8 @@
     justify-content: center;
 
     &__img {
-      width: 160px;
-      height: 160px;
+      width: 16rem;
+      height: 16rem;
     }
   }
 
@@ -27,26 +27,26 @@
   &__divider {
     background: #cccccc;
     text-align: center;
-    margin: 20px auto;
+    margin: 2.0rem auto;
     height: 1px;
-    width: 230px;
+    width: 23rem;
   }
 
   &__content{
-    padding: 0 25px;
+    padding: 0 2.5rem;
   }
 
   &__title {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 27px;
+    margin-bottom: 2.7rem;
   }
 
 
   &__footer {
 
-    padding: 0 25px;
-    padding-top: 30px;
+    padding: 0 2.5rem;
+    padding-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +56,7 @@
       background-clip: text;
       color: transparent;
 
-      font-size: 36px;
+      font-size: 3.6rem;
       font-weight: 700;
     }
   }
@@ -66,8 +66,8 @@
 .next_icon {
   border: solid 1px #F4A56A;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 4rem;
+  width: 4rem;
   cursor: pointer;
   position: relative;
 }
@@ -75,10 +75,10 @@
 .next__icon-img {
   background: url('../../../assets/icon/arrow-orange.svg') no-repeat;
   position: absolute;
-  top: 14px;
-  left: 16px;
-  height: 15px;
-  width: 10px;
+  top: 1.4rem;
+  left: 1.6rem;
+  height: 1.5rem;
+  width: 1rem;
 }
 
 

@@ -1,88 +1,96 @@
+// colocar margin x e no media tirar ou diminuir
+
 main {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.box {
-  background: url("../../assets/imgs/figura.svg") no-repeat;
-  position: absolute;
-  height: 800px;
-  width: 800px;
-  z-index: 0;
-  right: 0;
-  top: -101px;
 }
 
 .person {
   background: url("../../assets/imgs/undraw_job_offers_re_634p.svg") no-repeat;
-  background-size: 730px;
   position: absolute;
+  background-size: 73rem;
   height: 592px;
-  width: 800px;
+  width: 74rem;
   z-index: 2;
-  right: 136px;
+  right: 7.6rem;
   top: 81px;
+
+  @media (max-width: 1300px) {
+    right: 16px;
+    background-size: 69rem;
+    width: 69rem;
+  }
+  @media (max-width: 1000px) {
+    display: none;
+
+  }
 }
 
 
 
 .content {
-  margin-top: 124px;
+  margin-top: 12.4rem;
+
+  @media (max-width: 7000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
-.title {
-  font-size: 74px;
-  margin-bottom: 20px;
-  font-weight: 400;
+.content::before {
+  content: '';
+  background: url("../../assets/imgs/figura.svg") no-repeat;
+  position: absolute;
+  height: 80rem;
+  width: 80rem;
+  z-index: -1;
+  right: 0;
+  top: -101px;
+
+  @media (max-width: 900px) {
+    background: url("../../assets/imgs/background-wave.svg") no-repeat;
+
+    width: 100%;
+    background-size: 100%;
+    top: -100px;
+  }
+
 }
+
+
+
+.title {
+  font-size: 7.4rem;
+  margin-bottom: 2.0rem;
+  font-weight: 400;
+  @media (max-width: 1000px) {
+    font-size: 7rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 5rem;
+  }
+}
+
 
 .title-en {
   font-weight: 700;
   color: #BD5CB9;
-}
-
-.search {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 570px;
-
-  &__input {
-    border: none;
-    border-radius: 34px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-
-    padding-left: 30px;
-
-    height: 67px;
-    width: 570px;
-
-  }
-
-  &__btn {
-    background: linear-gradient(126.65deg, #FAB574 9.4%, #F09C6A 82.44%);
-    border: none;
-    border-radius: 50%;
-    box-shadow: 6px 6px 10px rgba(244, 165, 106, 0.5);
-    cursor: pointer;
-
-    position: absolute;
-    right: 13px;
 
 
-    height: 50px;
-    width: 50px;
-
-  }
 }
 
 
 .news {
-  margin-top: 80px;
-  width: 320px;
+  margin-top: 8rem;
+  // width: 32.0rem;
 
 
   display: flex;
@@ -90,47 +98,72 @@ main {
 
   &__title {
     color: #A260D7;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-right: 28px;
+    margin-right: 2.8rem;
   }
 
   &__content {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
     text-decoration: none;
   }
 }
 
 .card-section {
-  margin-top: 166px;
-  height: 610px;
+  margin-top: 120px;
+  height: 61rem;
   position: relative;
 }
 
-.testeee {
-  display: flex;
-  justify-content: end;
-}
 
-.testee {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .content__footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 300px;
+  margin-top: 5.6rem;
 
 }
 .content__description{
   text-align: right;
+  line-height: 2.6rem;
 }
 
 .content__link {
-  margin-top: 30px;
+  margin-top: 3rem;
   color: #F4A56A;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+}
+
+.footer::before {
+  content: '';
+  background: url('../../assets/imgs/box-footer.svg') no-repeat;
+
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  z-index: -1;
+}
+
+.center-teste {
+  height: 400px;
+  width: 800px;
+  // background: #A260D7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }
