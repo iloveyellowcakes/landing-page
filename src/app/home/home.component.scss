@@ -1,13 +1,16 @@
 // colocar margin x e no media tirar ou diminuir
+@import '../../assets/scss/mixins';
 
 main {
   position: relative;
   display: flex;
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
   }
+
+
 
 }
 
@@ -37,10 +40,12 @@ main {
 .content {
   margin-top: 12.4rem;
 
-  @media (max-width: 7000px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @include for-phone-only {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    margin-top: 6.4rem;
+
   }
 
 }
@@ -72,10 +77,10 @@ main {
   margin-bottom: 2.0rem;
   font-weight: 400;
   @media (max-width: 1000px) {
-    font-size: 7rem;
-  }
-  @media (max-width: 600px) {
     font-size: 5rem;
+  }
+  @include for-phone-only {
+    font-size: 4.5rem;
   }
 }
 
@@ -108,12 +113,21 @@ main {
     line-height: 2.0rem;
     text-decoration: none;
   }
+
+  @media( max-width: 1000px) {
+    margin-top: 4rem;
+
+  }
 }
 
 .card-section {
-  margin-top: 120px;
+  margin-top: 12rem;
   height: 61rem;
   position: relative;
+  @media( max-width: 1000px) {
+    margin-top: 5rem;
+
+  }
 }
 
 

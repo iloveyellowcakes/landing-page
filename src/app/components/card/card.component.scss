@@ -5,20 +5,25 @@
   border-radius: 1rem;
   box-shadow: 4px 4px 2.0rem rgba(167, 105, 207, 0.1);
 
-  margin: 4rem 0;
-  min-height: 40.3rem;
-  width: 27.0rem;
+  margin: 4rem .5rem;
+  max-height: 40.3rem;
+  max-width: 27.0rem;
+
+  @media( max-width: 900px) {
+
+
+  }
 
   &__header {
-    height: 175px;
+    // height: 175px;
 
     display: flex;
     align-items: flex-end;
     justify-content: center;
 
     &__img {
-      width: 16rem;
-      height: 16rem;
+      max-width: 16rem;
+      max-height: 16rem;
     }
   }
 
@@ -29,17 +34,26 @@
     text-align: center;
     margin: 2.0rem auto;
     height: 1px;
-    width: 23rem;
+    max-width: 23rem;
   }
 
   &__content{
     padding: 0 2.5rem;
+    @media( max-width: 900px) {
+      padding: 0 1rem;
+    }
   }
 
   &__title {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 2.7rem;
+    @media( max-width: 900px) {
+      font-size: 1.8rem;
+      margin-bottom: 1.7rem;
+
+
+    }
   }
 
 
@@ -51,6 +65,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @media( max-width: 900px) {
+      padding: 0 1rem;
+    }
+
     &__price {
       background: linear-gradient(90deg, rgba(204, 90, 165, 0.5) 0%, rgba(167, 105, 207, 0.5) 100%);
       background-clip: text;
@@ -58,6 +76,10 @@
 
       font-size: 3.6rem;
       font-weight: 700;
+      @media( max-width: 900px) {
+        font-size: 2.6rem;
+
+      }
     }
   }
 
@@ -70,6 +92,12 @@
   width: 4rem;
   cursor: pointer;
   position: relative;
+
+  // @media( max-width: 900px) {
+  //   height: 2rem;
+  //   width: 2rem;
+
+  // }
 }
 
 .next__icon-img {

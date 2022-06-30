@@ -23,16 +23,33 @@ body {
 .container {
   margin: 0 10rem;
 
-  @media (max-width: 680px) {
+  @include for-phone-only {
+    margin: 0 .5rem;
+
+  }
+
+  @media (max-width: 900px) {
     margin: 0 1.5rem;
 
   }
+  @media (max-width: 1200px) {
+    margin: 0 2rem;
+
+  }
+
 }
 
 .title-main {
   font-weight: 700;
   font-size: 3.7rem;
   margin-bottom: 5.9rem;
+
+  @include for-phone-only {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3.9rem;
+
+  }
 
 }
 
@@ -128,13 +145,19 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media( max-width: 900px) {
+        padding: .9rem 1rem 1.2rem 1rem;
+
+      }
 
     }
 
     &__footer__price {
       color: white;
-      font-size: 3.6rem;
-      font-weight: 700;
+      @media( max-width: 900px) {
+        font-size: 2.8rem;
+
+      }
     }
 
   }
@@ -160,6 +183,12 @@ body {
 
     width: 5.4rem;
     height: 5.4rem;
+
+    @media( max-width: 900px) {
+      height: 4rem;
+      width: 4rem;
+
+    }
   }
 
   .next__icon-img {
